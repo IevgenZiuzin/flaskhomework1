@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block header %}
+    {{ super() }}
+    {% include 'snippets/history_nav.html' %}
+{% endblock %}
+{% block content %}
+    <div class="text-center">
+        {{ context.message }}
+    </div>
+{% endblock %}
