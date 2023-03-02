@@ -1,9 +1,6 @@
-from flask import Flask, render_template, redirect, url_for
-from admin.admin import admin
+from flask import Flask, render_template
 
 app = Flask(__name__)
-
-app.register_blueprint(admin, url_prefix='/admin')
 
 
 @app.route('/')
